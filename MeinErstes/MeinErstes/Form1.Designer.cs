@@ -28,47 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmdHallo = new System.Windows.Forms.Button();
-            this.cmdEnde = new System.Windows.Forms.Button();
-            this.lblAnzeige = new System.Windows.Forms.Label();
+            this.CmdHallo = new System.Windows.Forms.Button();
+            this.CmdEnde = new System.Windows.Forms.Button();
+            this.LblAnzeige = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // cmdHallo
+            // CmdHallo
             // 
-            this.cmdHallo.Location = new System.Drawing.Point(12, 72);
-            this.cmdHallo.Name = "cmdHallo";
-            this.cmdHallo.Size = new System.Drawing.Size(75, 23);
-            this.cmdHallo.TabIndex = 0;
-            this.cmdHallo.Text = "Hallo";
-            this.cmdHallo.UseVisualStyleBackColor = true;
+            this.CmdHallo.Location = new System.Drawing.Point(12, 72);
+            this.CmdHallo.Name = "CmdHallo";
+            this.CmdHallo.Size = new System.Drawing.Size(75, 23);
+            this.CmdHallo.TabIndex = 0;
+            this.CmdHallo.Text = "Hallo";
+            this.CmdHallo.UseVisualStyleBackColor = true;
+            this.CmdHallo.Click += new System.EventHandler(this.CmdHallo_Click);
             // 
-            // cmdEnde
+            // CmdEnde
             // 
-            this.cmdEnde.Location = new System.Drawing.Point(132, 72);
-            this.cmdEnde.Name = "cmdEnde";
-            this.cmdEnde.Size = new System.Drawing.Size(75, 23);
-            this.cmdEnde.TabIndex = 1;
-            this.cmdEnde.Text = "Ende";
-            this.cmdEnde.UseVisualStyleBackColor = true;
+            this.CmdEnde.Location = new System.Drawing.Point(132, 72);
+            this.CmdEnde.Name = "CmdEnde";
+            this.CmdEnde.Size = new System.Drawing.Size(75, 23);
+            this.CmdEnde.TabIndex = 1;
+            this.CmdEnde.Text = "Ende";
+            this.CmdEnde.UseVisualStyleBackColor = true;
+            this.CmdEnde.Click += new System.EventHandler(this.CmdEnde_Click);
             // 
-            // lblAnzeige
+            // LblAnzeige
             // 
-            this.lblAnzeige.AutoSize = true;
-            this.lblAnzeige.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAnzeige.Location = new System.Drawing.Point(37, 24);
-            this.lblAnzeige.Name = "lblAnzeige";
-            this.lblAnzeige.Size = new System.Drawing.Size(32, 15);
-            this.lblAnzeige.TabIndex = 2;
-            this.lblAnzeige.Text = "(leer)";
+            this.LblAnzeige.AutoSize = true;
+            this.LblAnzeige.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LblAnzeige.Location = new System.Drawing.Point(37, 24);
+            this.LblAnzeige.Name = "LblAnzeige";
+            this.LblAnzeige.Size = new System.Drawing.Size(32, 15);
+            this.LblAnzeige.TabIndex = 2;
+            this.LblAnzeige.Text = "(leer)";
+            this.LblAnzeige.Click += new System.EventHandler(this.LblAnzeige_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 256);
-            this.Controls.Add(this.lblAnzeige);
-            this.Controls.Add(this.cmdEnde);
-            this.Controls.Add(this.cmdHallo);
+            this.Controls.Add(this.LblAnzeige);
+            this.Controls.Add(this.CmdEnde);
+            this.Controls.Add(this.CmdHallo);
             this.Name = "Form1";
             this.Text = "Mein erstes Programm";
             this.ResumeLayout(false);
@@ -78,9 +81,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button cmdHallo;
-        private System.Windows.Forms.Button cmdEnde;
-        private System.Windows.Forms.Label lblAnzeige;
+        private System.Windows.Forms.Button CmdHallo;
+        private System.Windows.Forms.Button CmdEnde;
+        private System.Windows.Forms.Label LblAnzeige;
     }
 }
 
